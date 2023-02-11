@@ -1,16 +1,28 @@
-.logo {
-  font-family: $fontFamilyIcon;
+.logo__office-name {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
+  color: $lettersColorGold;
+  text-decoration: none;
+  border: none;
+}
 
- 
-  &__first-part {
-    color: $brandColor;
-  }
+.logo__boss-name {
+  display: none;
 
-  &__secend-part {
-    color: $whiteColor;
+  @media (min-width: 768px) {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--letters-color-gold);
+    text-decoration: none;
+    border: none;
   }
 }

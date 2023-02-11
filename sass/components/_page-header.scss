@@ -1,6 +1,8 @@
 .menu {
   border-bottom: 1px solid $borderColor;
-  padding: 1rem 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $backgrandHeaderColor;
 
   &__box {
     display: flex;
@@ -112,4 +114,9 @@
       gap: 3rem;
     }
   }
+}
+
+.header__office-name {
+  display: flex;
+  flex-direction: column;
 }

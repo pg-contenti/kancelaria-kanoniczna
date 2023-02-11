@@ -13,19 +13,21 @@
 }
 
 .menu-toggle {
-  cursor: $cursor;
+  min-height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
   border: none;
-  background-color: $whiteColor;
-  width: auto;
+  background-color: $lettersColorGold;
 
   &__icon {
     &:hover,
     &:focus,
     &:active {
-      fill: $brandColor;
+      fill: $whiteColor;
     }
   }
 }
+
 .menu-box {
   position: absolute;
   top: 10px;
