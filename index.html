@@ -2,26 +2,48 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agencja</title>
-    <!--Google font-->
+    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+
+    <title>Projekt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <!--End Google font-->
-    <!--Modern-normal-->
-    <link rel="stylesheet" href="/css/modern-normalize.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header class="menu">
       <div class="container menu__page">
         <div class="menu__box">
-          <h2 class="logo"><span class="logo__first-part">Web</span>Studio</h2>
+          <img
+            class="logo_image"
+            src="./images/logo-kancelaria.png"
+            alt="pisanie programów"
+            width="60"
+            height="48"
+          />
+          <div class="header__office-name">
+            <a class="logo__office-name" href="index.html">Contenti</a>
+            <a class="logo__office-name">Kancelaria Prawa Kanonicznego</a>
+          </div>
+          <a class="logo__boss-name">Przemysław Grzybowski</a>
+
+          <!--<h2 class="logo"><span class="logo__first-part">Web</span>Studio</h2>-->
           <!-- Nawigacja -->
           <button
             class="menu-toggle js-open-menu"
