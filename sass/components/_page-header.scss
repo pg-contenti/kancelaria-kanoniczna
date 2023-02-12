@@ -40,11 +40,24 @@
     &__nav {
       text-decoration: none;
       cursor: $cursor;
-      color: $textColor;
+      color: $lettersColorGold;
 
       &:hover,
       &:focus {
-        color: $brandColor;
+        color: $silverColor;
+
+        &:hover::after,
+        &:focus::after {
+          background-color: $silverColor;
+          content: "";
+          display: flex;
+          justify-content: center;
+          position: relative;
+          width: 100%;
+          height: 4px;
+          top: 35px;
+          border-radius: 2px;
+        }
       }
     }
 
@@ -60,45 +73,50 @@
       fill: currentColor;
       margin-right: 0.625rem;
 
-      &:hover,
+      /* &:hover,
       &:focus,
       &:active {
         fill: $brandColor;
-      }
+      }*/
     }
+
     &__phone {
-      @extend .menu__nav;
+      text-decoration: none;
+      cursor: $cursor;
       font-weight: 500;
       color: $paragraphColor;
 
       &:hover,
       &:focus {
-        color: $brandColor;
+        color: $silverColor;
       }
     }
 
     &__mail {
-      @extend .menu__phone;
+      text-decoration: none;
+      cursor: $cursor;
+      font-weight: 500;
+      color: $paragraphColor;
       margin-right: 3.125rem;
 
       &:hover,
       &:focus {
-        color: $brandColor;
+        color: $silverColor;
       }
     }
 
     &__nav--active {
-      color: $brandColor;
+      color: $silverColor;
 
       &:after {
         content: "";
         display: block;
-        background-color: $brandColor;
+        background-color: $silverColor;
         height: 4px;
         width: 100%;
         border-radius: 2px;
         position: relative;
-        top: 32px;
+        top: 35px;
       }
     }
   }
