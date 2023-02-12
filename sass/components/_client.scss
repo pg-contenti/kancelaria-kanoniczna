@@ -1,4 +1,5 @@
 .client {
+  display: none;
   &__title {
     @extend %title;
     font-size: 1.75rem;
