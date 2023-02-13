@@ -22,7 +22,18 @@
     <header class="menu">
       <div class="container menu__page">
         <div class="menu__box">
-          <h2 class="logo"><span class="logo__first-part">Web</span>Studio</h2>
+          <img
+            class="logo_image"
+            src="./images/logo-kancelaria.png"
+            alt="pisanie programów"
+            width="60"
+            height="48"
+          />
+          <div class="header__office-name">
+            <a class="logo__office-name" href="index.html">Contenti</a>
+            <a class="logo__office-name">Kancelaria Prawa Kanonicznego</a>
+          </div>
+          <a class="logo__boss-name">Przemysław Grzybowski</a>
           <!-- Nawigacja -->
           <button
             class="menu-toggle js-open-menu"
@@ -56,19 +67,17 @@
                     >O kancelarii</a
                   >
                 </li>
-                <li><a class="menu__nav" href="/contact">Kontakt</a></li>
+                <li><a class="menu__nav" href="/contact.html">Kontakt</a></li>
               </ul>
             </nav>
             <div class="menu__box menu__box--tablet">
-              <a class="menu__mail" href="mailto:info@devstudio.com">
+              <a class="menu__mail" href="mailto: contenti.office@gmail.com">
                 <svg class="menu__icon" width="16" height="12">
-                  <use href="images/icons.svg#icon-envelope"></use></svg
-                >info@devstudio.com</a
+                  <use href="images/icons.svg#icon-envelope"></use></svg                >contenti.office@gmail.com</a
               >
-              <a class="menu__phone" href="tel:+48111111111">
+              <a class="menu__phone" href="tel: 697469739">
                 <svg class="menu__icon" width="10" height="16">
-                  <use href="images/icons.svg#icon-smartphone"></use></svg
-                >+48 111 111 111</a
+                  <use href="images/icons.svg#icon-smartphone"></use></svg                >697468739</a
               >
             </div>
           </div>
@@ -77,27 +86,27 @@
     </header>
     <main>
       <!--HERO-->
-      <section class="container">
-        <ul class="list menu-portfolio">
-          <li>
-            <button class="menu-portfolio__btn" type="button">Wszystkie</button>
-          </li>
-          <li>
-            <button class="menu-portfolio__btn" type="button">Strony</button>
-          </li>
-          <li>
-            <button class="menu-portfolio__btn" type="button">Aplikacje</button>
-          </li>
-          <li>
-            <button class="menu-portfolio__btn" type="button">Dizajn</button>
-          </li>
-          <li>
-            <button class="menu-portfolio__btn" type="button">Marketing</button>
-          </li>
-        </ul>
+      <section>
+        <div class="about-contact">
+          <div class="container about-contact__flex">
+        <div class="about-contact__space">
+          <ul class="about-contact__list">
+              <a
+                  class="about-contact__title"
+                  >Kancelaria Prawa Kanonicznego
+                </a>
+                <p class="about-contact__description">Dr Przemysław Grzybowski świadczy usługi prawne w szeroko pojętym zakresie prawa kanonicznego. Jego Kancelaria zakresem terytorialnym nie ogranicza swojej działalności jedynie do terenu Archidiecezji Gnienźnieńskiej. Korzystając z możliwowści telekomunikacyjnych wykonuje zlecenia także w sposób zdalny.  
+                  Celem kancelarii jest zapewnienie rzetelnej i profesjonalnej pomocy prawnej w rozwiązaniu każdego problemu prawnego. Każda sprawa traktowana jest zawsze indywidualnie, w trosce o najwyższą jakość usług prawnych, aby każdy klient był zadowolony.</p>
+              
+              <li>
+                
+            </ul>
+          
+        </div>
+          </div>
       </section>
       <!--Portfolio-->
-      <section class="portfolio container">
+      <!--<section class="portfolio container">
         <ul class="list portfolio__box">
           <li class="portfolio__list">
             <div class="portfolio__card">
@@ -280,7 +289,7 @@
             <p class="portfolio__job">Aplikacja</p>
           </li>
         </ul>
-      </section>
+      </section>-->
     </main>
     <!--Footer-->
     <footer>
@@ -288,65 +297,42 @@
         <div class="container contact__flex">
           <div class="contact__space">
             <div class="contact__box">
-              <h2 class="logo">
-                <span class="logo__first-part">Web</span
-                ><spon class="logo__secend-part">Studio</spon>
-              </h2>
+              <a class="logo__office-name" href="index.html">Contenti</a>
+              <a class="logo__office-name">Kancelaria Prawa Kanonicznego</a>
             </div>
             <address>
               <ul class="contact__list">
                 <li>
                   <a
                     class="contact__data"
-                    href="https://goo.gl/maps/quSYSpreMcUmD9Dv7"
+                    href="https://www.google.com/maps/place/Prusa+14,+62-240+Trzemeszno/@52.5569694,17.8169188,17z/data=!3m1!4b1!4m6!3m5!1s0x4704bd4dae819485:0x61b9de2a8e26e731!8m2!3d52.5569662!4d17.8191075!16s%2Fg%2F11fpvb6rtv"
                     target="_blank"
-                    >m. Warszawa, Aleje Jerozolimskie 21
+                    >ul. B. Prusa 14, 62-240 Trzemeszno
                   </a>
                 </li>
                 <li>
-                  <a class="contact__mail" href="mailito:info@example.com"
-                    >info@example.com</a
+                  <a
+                    class="contact__mail"
+                    href="mailto:contenti.office@gmail.com"
+                  >
+                    <svg class="menu__icon" width="16" height="12">
+                      <use href="images/icons.svg#icon-envelope"></use></svg                    >contenti.office@gmail.com</a
                   >
                 </li>
                 <li>
-                  <a class="contact__phone" href="tel:+48111111111"
-                    >+48 111 111 111</a
+                  <a class="contact__phone" href="tel:+48697468739"
+                    ><svg class="menu__icon" width="10" height="16">
+                      <use href="images/icons.svg#icon-smartphone"></use></svg                    >697468739</a
                   >
                 </li>
               </ul>
             </address>
           </div>
           <div class="social-media">
-            <h3 class="social-media__title">Dołącz do nas</h3>
+            <h3 class="social-media__title">Dołącz do nas na Facebooku</h3>
             <ul class="social-media__box">
               <li>
-                <a href="/instagram">
-                  <svg class="social-media__icon" width="44" height="44">
-                    <use
-                      width="20"
-                      height="20"
-                      x="12px"
-                      y="12px"
-                      href="images/icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="/twitter">
-                  <svg class="social-media__icon" width="44" height="44">
-                    <use
-                      width="20"
-                      height="20"
-                      x="12px"
-                      y="12px"
-                      href="images/icons.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="/facebook">
+                <a href="https://www.facebook.com/grzyprzem/">
                   <svg class="social-media__icon" width="44" height="44">
                     <use
                       width="20"
@@ -358,42 +344,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="/linkedin">
-                  <svg class="social-media__icon" width="44" height="44">
-                    <use
-                      width="20"
-                      height="20"
-                      x="12px"
-                      y="12px"
-                      href="images/icons.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
             </ul>
-          </div>
-          <div class="form">
-            <form>
-              <div class="form__title">
-                <label for="news"> Zapisz się do newslettera </label>
-              </div>
-              <div class="newsletter">
-                <input
-                  class="newsletter__email"
-                  type="email"
-                  name="email"
-                  id="news"
-                  placeholder="E-mail"
-                />
-                <button class="newsletter__input" type="submit">
-                  Zapisz się
-                  <svg class="newsletter__icon" width="24" height="24">
-                    <use href="images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
