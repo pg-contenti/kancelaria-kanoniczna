@@ -32,9 +32,13 @@
     }
 
     &__page {
-      font-size: 0.875rem;
+      font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;
+
+      @media (min-width: 1200px) {
+        font-size: 18px;
+      }
     }
 
     &__nav {
@@ -132,6 +136,10 @@
       flex-direction: row;
       align-items: flex-end;
       gap: 3rem;
+
+      &__page {
+        font-size: 28px;
+      }
     }
   }
 }
