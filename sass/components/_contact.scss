@@ -1,0 +1,134 @@
+.main-contact {
+  padding: 60px 0px;
+  color: #fff;
+  background-color: $backgrandHeaderColor;
+  line-height: 1.7;
+  border-bottom: 1px solid $borderColor;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__space {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  &__data {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $whiteColor;
+    padding-top: 20px;
+    text-decoration: none;
+    font-style: italic;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+      text-decoration: underline;
+    }
+  }
+
+  &__mail {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $silverColor;
+    }
+  }
+
+  &__phone {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $contactColor;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $silverColor;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-contact {
+    &__flex {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-contact {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__flex {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    &__space {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.menu__icon {
+  vertical-align: middle;
+  fill: currentColor;
+  margin-right: 0.625rem;
+
+  /* &:hover,
+    &:focus,
+    &:active {
+      fill: $brandColor;
+    }*/
+}
+
+/*&__phone {
+    text-decoration: none;
+    cursor: $cursor;
+    font-weight: 500;
+    color: $paragraphColor;
+  
+    &:hover,
+    &:focus {
+      color: $silverColor;
+    }
+  }
+  
+  &__mail {
+    text-decoration: none;
+    cursor: $cursor;
+    font-weight: 500;
+    color: $paragraphColor;
+    margin-right: 3.125rem;
+  
+    &:hover,
+    &:focus {
+      color: $silverColor;
+    }
+  }*/
