@@ -2,21 +2,29 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strona główna</title>
-    <!--Google font-->
+    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+
+    <title>Contenti-Kancelaria-Kanoniczna</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <!--End Google font-->
-    <!--Modern-normal-->
-    <link rel="stylesheet" href="/css/modern-normalize.css" />
-
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <header class="menu">
@@ -60,12 +68,12 @@
             <nav>
               <ul class="list">
                 <li>
-                  <a class="menu__nav" href="index.html">Strona główna</a>
+                  <a class="menu__nav" href="index.html"
+                    >Strona główna</a
+                  >
                 </li>
                 <li>
-                  <a class="menu__nav menu__nav--active" href="portfolio.html"
-                    >O kancelarii</a
-                  >
+                  <a class="menu__nav menu__nav--active" href="about.html">O kancelarii</a>
                 </li>
                 <li><a class="menu__nav" href="contact.html">Kontakt</a></li>
               </ul>
@@ -84,242 +92,7 @@
         </div>
       </div>
     </header>
-    <main>
-      <!--HERO-->
-      <section>
-        <div class="about-contact">
-          <div class="container about-contact__flex">
-        <div class="about-contact__space">
-          <ul class="about-contact__list">
-              <a
-                  class="about-contact__title"
-                  >Kancelaria Prawa Kanonicznego
-                </a>
-                <p class="about-contact__description">Dr Przemysław Grzybowski świadczy usługi prawne w szeroko pojętym zakresie prawa kanonicznego. Jego Kancelaria zakresem terytorialnym nie ogranicza swojej działalności jedynie do terenu Archidiecezji Gnienźnieńskiej. Korzystając z możliwowści telekomunikacyjnych wykonuje zlecenia także w sposób zdalny.  
-                  Celem kancelarii jest zapewnienie rzetelnej i profesjonalnej pomocy prawnej w rozwiązaniu każdego problemu prawnego. Każda sprawa traktowana jest zawsze indywidualnie, w trosce o najwyższą jakość usług prawnych, aby każdy klient był zadowolony.</p>
-              
-              <li>
-                
-            </ul>
-          
-        </div>
-          </div>
-      </section>
-      <!--Portfolio-->
-      <!--<section class="portfolio container">
-             </section>-->
-    </main>
-    <!--Footer-->
-    <footer>
-      <div class="contact">
-        <div class="container contact__flex">
-          <div class="contact__space">
-            <div class="contact__box">
-              <a class="logo__office-name" href="index.html">Contenti</a>
-              <a class="logo__office-name">Kancelaria Prawa Kanonicznego</a>
-            </div>
-            <address>
-              <ul class="contact__list">
-                <li>
-                  <a
-                    class="contact__data"
-                    href="https://www.google.com/maps/place/Prusa+14,+62-240+Trzemeszno/@52.5569694,17.8169188,17z/data=!3m1!4b1!4m6!3m5!1s0x4704bd4dae819485:0x61b9de2a8e26e731!8m2!3d52.5569662!4d17.8191075!16s%2Fg%2F11fpvb6rtv"
-                    target="_blank"
-                    >ul. B. Prusa 14, 62-240 Trzemeszno
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="contact__mail"
-                    href="mailto:contenti.office@gmail.com"
-                  >
-                    <svg class="menu__icon" width="16" height="12">
-                      <use href="images/icons.svg#icon-envelope"></use></svg                    >contenti.office@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <a class="contact__phone" href="tel:+48697468739"
-                    ><svg class="menu__icon" width="10" height="16">
-                      <use href="images/icons.svg#icon-smartphone"></use></svg                    >697468739</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="social-media">
-            <h3 class="social-media__title">Dołącz do nas na Facebooku</h3>
-            <ul class="social-media__box">
-              <li>
-                <a href="https://www.facebook.com/grzyprzem/">
-                  <svg class="social-media__icon" width="44" height="44">
-                    <use
-                      width="20"
-                      height="20"
-                      x="12px"
-                      y="12px"
-                      href="images/icons.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- menu mobile -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle menu-box js-close-menu">
-        <svg
-          class="menu-toggle__icon"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <ul class="mobile-menu">
-        <li>
-          <a href="index.html" class="mobile-menu__link">Strona główna</a>
-        </li>
-        <li>
-          <a href="portfolio.html" class="mobile-menu__link">O kancelarii</a>
-        </li>
-        <li><a href="contact.html" class="mobile-menu__link">Kontakt</a></li>
-      </ul>
-      <div class="mobile-menu">
-        <a href="tel:+48697468739" class="mobile-menu__phone">
-          +48 697468739</a
-        >
-        <a href="mailto:info@devstudio.com" class="mobile-menu__email">
-          contenti.office@gmail.com</a
-        >
-        <ul class="mobile-menu__social">
-          <li>
-            <a
-              href="/instagram"
-              class="mobile-menu__social__link mobile-menu__social__link--first"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="/twitter" class="mobile-menu__social__link">Twitter</a>
-          </li>
-          <li>
-            <a href="/facebook" class="mobile-menu__social__link">Facebook</a>
-          </li>
-          <li>
-            <a
-              href="/linkedIn"
-              class="mobile-menu__social__link mobile-menu__social__link--last"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strona główna</title>
-    <!--Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!--End Google font-->
-    <!--Modern-normal-->
-    <link rel="stylesheet" href="/css/modern-normalize.css" />
 
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
-  <body>
-    <header class="menu">
-      <div class="container menu__page">
-        <div class="menu__box">
-          <img
-            class="logo_image"
-            src="./images/logo-kancelaria.png"
-            alt="pisanie programów"
-            width="60"
-            height="48"
-          />
-          <div class="header__office-name">
-            <a class="logo__office-name" href="index.html">Contenti</a>
-            <a class="logo__office-name">Kancelaria Prawa Kanonicznego</a>
-          </div>
-          <a class="logo__boss-name">Przemysław Grzybowski</a>
-          <!-- Nawigacja -->
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              class="menu-toggle__icon"
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <!-- Główne menu -->
-          <div class="menu__main">
-            <nav>
-              <ul class="list">
-                <li>
-                  <a class="menu__nav" href="index.html">Strona główna</a>
-                </li>
-                <li>
-                  <a class="menu__nav menu__nav--active" href="portfolio.html"
-                    >O kancelarii</a
-                  >
-                </li>
-                <li><a class="menu__nav" href="/contact.html">Kontakt</a></li>
-              </ul>
-            </nav>
-            <div class="menu__box menu__box--tablet">
-              <a class="menu__mail" href="mailto: contenti.office@gmail.com">
-                <svg class="menu__icon" width="16" height="12">
-                  <use href="images/icons.svg#icon-envelope"></use></svg                >contenti.office@gmail.com</a
-              >
-              <a class="menu__phone" href="tel: 697469739">
-                <svg class="menu__icon" width="10" height="16">
-                  <use href="images/icons.svg#icon-smartphone"></use></svg                >697468739</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
     <main>
       <!--HERO-->
       <section>
@@ -341,192 +114,7 @@
         </div>
           </div>
       </section>
-      <!--Portfolio-->
-      <!--<section class="portfolio container">
-        <ul class="list portfolio__box">
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/technocrack.jpg"
-                alt="Strona internetowa z twarzami ludzi"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Technocrack</h3>
-            <p class="portfolio__job">Strona internetowa</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/grafika-new-orlean-vs-golden-star.jpg"
-                alt="Dwóch graczy w kosza z błękitną smugą w tle"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Grafika New Orlean vs Golden Star</h3>
-            <p class="portfolio__job">Dizajn</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/restauracja-seafood.jpg"
-                alt="Logo firmy z rybą w tle"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Restauracja Seafood</h3>
-            <p class="portfolio__job">Aplikacja</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/projekt-prime.jpg"
-                alt="Czarne słuchawki na białym tle"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Projekt Prime</h3>
-            <p class="portfolio__job">Marketing</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/projekt-boxes.jpg"
-                alt="Dwa pudełka białe większe, brązowe mniejsze"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Projekt Boxes</h3>
-            <p class="portfolio__job">Aplikacja</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/inspiration-has-no-borders.jpg"
-                alt="Strona internetowa w kolorze granatowym z mapą świata"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Inspiration has no Borders</h3>
-            <p class="portfolio__job">Strona internetowa</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/magazyn-limited-edition.jpg"
-                alt="Magazyn z kolorowymi zdjęciami kobiety z suszarka, torebką i dwie kobiety z ręką w góże ze znakim solidarności"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Magazyn Limited Edition</h3>
-            <p class="portfolio__job">Dizajn</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/projekt-lab.jpg"
-                alt="Zawiszka na sznurku"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Projekt LAB</h3>
-            <p class="portfolio__job">Marketing</p>
-          </li>
-          <li class="portfolio__list">
-            <div class="portfolio__card">
-              <img
-                src="images/growing-business.jpg"
-                alt="Lapropo z otwarą stroną biznesową internetową"
-                width="370"
-                height="294"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__description">
-                  Technocrack jest popularną platformą wykorzystywaną do
-                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                  platformę do celów szpiegowskich i ataków na niezabezpieczone
-                  serwery konkurencji
-                </p>
-              </div>
-            </div>
-            <h3 class="portfolio__name">Growing Business</h3>
-            <p class="portfolio__job">Aplikacja</p>
-          </li>
-        </ul>
-      </section>-->
-    </main>
+          </main>
     <!--Footer-->
     <footer>
       <div class="contact">
@@ -552,7 +140,7 @@
                     href="mailto:contenti.office@gmail.com"
                   >
                     <svg class="menu__icon" width="16" height="12">
-                      <use href="images/icons.svg#icon-envelope"></use></svg                    >contenti.office@gmail.com</a
+                      <use href="images/icons.svg#icon-envelope"></use></svg>contenti.office@gmail.com</a
                   >
                 </li>
                 <li>
@@ -585,6 +173,8 @@
         </div>
       </div>
     </footer>
+    
+    
     <!-- menu mobile -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle menu-box js-close-menu">
@@ -608,39 +198,15 @@
           <a href="index.html" class="mobile-menu__link">Strona główna</a>
         </li>
         <li>
-          <a href="portfolio.html" class="mobile-menu__link">O kancelarii</a>
+          <a class="mobile-menu__link" href="about.html" >O kancelarii</a>
         </li>
-        <li><a href="contact.html" class="mobile-menu__link">Kontakt</a></li>
+        <li><a class="mobile-menu__link" href="contact.html">Kontakt</a></li>
       </ul>
       <div class="mobile-menu">
-        <a href="tel:+48697468739" class="mobile-menu__phone">
-          +48697468739</a
-        >
-        <a href="mailto:contenti.office@gmail.com" class="mobile-menu__email">
+        <a href="tel: 697468739" class="mobile-menu__phone">697468739</a>
+        <a href="mailto: contenti.office@gmail.com" class="mobile-menu__email">
           contenti.office@gmail.com</a
         >
-        <ul class="mobile-menu__social">
-          <li>
-            <a
-              href="/instagram"
-              class="mobile-menu__social__link mobile-menu__social__link--first"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="/twitter" class="mobile-menu__social__link">Twitter</a>
-          </li>
-          <li>
-            <a href="/facebook" class="mobile-menu__social__link">Facebook</a>
-          </li>
-          <li>
-            <a
-              href="/linkedIn"
-              class="mobile-menu__social__link mobile-menu__social__link--last"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
       </div>
     </div>
     <script
@@ -650,5 +216,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
