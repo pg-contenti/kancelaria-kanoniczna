@@ -27,7 +27,7 @@
     </style>
   </head>
   <body>
-    <header class="menu">
+    <header class="menu" id="hero-header">
       <div class="container menu__page">
         <div class="menu__box">
           <img
@@ -73,7 +73,10 @@
                   >
                 </li>
                 <li>
-                  <a class="menu__nav" href="about.html">O kancelarii</a>
+                  <a class="menu__nav" href="#about">O kancelarii</a>
+                </li>
+                <li>
+                  <a class="menu__nav" href="#services">Usługi</a>
                 </li>
                 <li><a class="menu__nav" href="contact.html">Kontakt</a></li>
               </ul>
@@ -102,12 +105,33 @@
           </button>-->
         </div>
       </section>
-      
+      <a class="btn-up" href="#hero-header"
+  ><svg class="btn-up__icon"><use href="./images/icons.svg#icon-circle-up"></use></svg>
+</a>
+<section>
+  <div class="about-contact" id="about">
+    <div class="container about-contact__flex">
+  <div class="about-contact__space">
+    <ul class="about-contact__list">
+        <a
+            class="about-contact__title"
+            >Kancelaria Prawa Kanonicznego
+          </a>
+          <p class="about-contact__description">Mec. dr Przemysław Grzybowski świadczy usługi prawne w szeroko pojętym zakresie prawa kanonicznego. Kancelaria pana mecenasa zakresem terytorialnym nie ogranicza swojej działalności jedynie do terenu Archidiecezji Gnienźnieńskiej. Korzystając z możliwowści telekomunikacyjnych wykonuje zlecenia także w sposób zdalny.  
+            Celem kancelarii jest zapewnienie rzetelnej i profesjonalnej pomocy prawnej w rozwiązaniu każdego problemu prawnego. Każda sprawa traktowana jest zawsze indywidualnie, w trosce o najwyższą jakość usług prawnych, aby każdy klient był zadowolony.</p>
+        
+        <li>
+          
+      </ul>
+    
+  </div>
+    </div>
+</section>
       <!--USŁUGI-->
       <section class="section">
         <div class="team">
           <div class="container">
-            <h2 class="team__title">Zakres usług</h2>
+            <h2 id="services" class="team__title">Zakres usług</h2>
             <ul class="team__flex">
               <li class="team__card">
                 <picture>
@@ -443,9 +467,13 @@
           <a href="index.html" class="mobile-menu__link">Strona główna</a>
         </li>
         <li>
-          <a class="mobile-menu__link" href="about.html" >O kancelarii</a>
+          <a href="#about" class="mobile-menu__link">O kancelarii</a>
         </li>
-        <li><a class="mobile-menu__link" href="contact.html">Kontakt</a></li>
+        <li>
+          <a href="#services" class="mobile-menu__link">Usługi</a>
+        </li>
+        <li><a href="contact.html" class="mobile-menu__link">Kontakt</a>
+                    </li>
       </ul>
       <div class="mobile-menu">
         <a href="tel: 697468739" class="mobile-menu__phone">697468739</a>
