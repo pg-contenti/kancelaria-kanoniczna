@@ -26,6 +26,14 @@
     background-color: $whiteColor;
     box-shadow: $boxShadow;
     border-radius: 0px 0px 0.25rem 0.25rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px -5px 10px 10px rgba(0.3, 0.3, 0.3, 0.3);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
   }
 
   &__name {

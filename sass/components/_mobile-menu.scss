@@ -1,15 +1,29 @@
 .menu-container {
+  display: block;
   position: fixed;
+
+  padding: 45px 35px;
+  top: 0;
+  right: 0;
+  height: 100vh;
+
+  background-color: $backgrandHeaderColor;
+  transform: translateX(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*
+  
   opacity: 0;
   background-color: $backgrandHeaderColor;
   transform: translateX(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
   inset: 0;
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ */
 }
 
 .menu-toggle {
@@ -44,6 +58,7 @@
 }
 
 .mobile-menu {
+  right: 0;
   display: flex;
   list-style: none;
   gap: 2rem;

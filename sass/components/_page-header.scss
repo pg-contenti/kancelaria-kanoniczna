@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
   }
 
   &__main {
@@ -148,4 +148,23 @@
 .header__office-name {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1200px) {
+    max-width: 200px;
+  }
+}
+
+.btn-up {
+  transition: top 0.25s;
+  position: fixed;
+  top: 75%;
+  right: 2%;
+
+  &__icon {
+    width: 45px;
+    height: 45px;
+    fill: $lettersColorGold;
+    transition: fill 0.25s;
+    display: block;
+  }
 }

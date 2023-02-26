@@ -22,14 +22,13 @@
     margin-top: 20px;
   }
 
-  &__title {
+  /*&__title {
     font-style: normal;
     font-size: 18px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $lettersColorGold;
     padding-top: 20px;
-
     text-decoration: none;
     font-style: uppercase;
 
@@ -37,14 +36,15 @@
     &:focus {
       color: $brandColor;
       text-decoration: underline;
-    }*/
-  }
+    }
+  }*/
 
   &__description {
     font-style: normal;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 32px;
     margin-top: 20px;
+    letter-spacing: 0.05em;
   }
 
   &__mail {
@@ -165,13 +165,21 @@
   }
 
   &__title {
+    font-size: 24px;
+    line-height: 1.18;
+    text-align: center;
+    padding-top: 3.75rem;
+    padding-bottom: 1.875rem;
+    margin: 0;
+    color: $lettersColorGold;
+
+    /*
     font-style: normal;
     font-size: 18px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $lettersColorGold;
     padding-top: 20px;
-
     text-decoration: none;
     font-style: uppercase;
 
@@ -179,7 +187,7 @@
     &:focus {
       color: $brandColor;
       text-decoration: underline;
-    }*/
+    }
   }
 
   &__description {
@@ -187,78 +195,78 @@
     font-size: 14px;
     line-height: 30px;
     margin-top: 20px;
-  }
+  }*/
 
-  &__mail {
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $contactColor;
-    text-decoration: none;
+    &__mail {
+      font-style: normal;
+      font-size: 18px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $contactColor;
+      text-decoration: none;
 
-    &:hover,
-    &:focus {
-      color: $silverColor;
+      &:hover,
+      &:focus {
+        color: $silverColor;
+      }
+    }
+
+    &__phone {
+      font-style: normal;
+      font-size: 18px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $contactColor;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $silverColor;
+      }
     }
   }
 
-  &__phone {
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $contactColor;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: $silverColor;
+  @media screen and (min-width: 768px) {
+    .about-contact {
+      &__flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
   }
-}
 
-@media screen and (min-width: 768px) {
-  .about-contact {
-    &__flex {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+  @media screen and (min-width: 1200px) {
+    .main-contact {
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+      &__flex {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+
+      &__space {
+        text-align: center;
+        margin-bottom: 0;
+      }
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .main-contact {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .menu__icon {
+    vertical-align: middle;
+    fill: currentColor;
+    margin-right: 0.625rem;
 
-    &__flex {
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: nowrap;
-    }
-
-    &__space {
-      text-align: center;
-      margin-bottom: 0;
-    }
-  }
-}
-
-.menu__icon {
-  vertical-align: middle;
-  fill: currentColor;
-  margin-right: 0.625rem;
-
-  /* &:hover,
+    /* &:hover,
       &:focus,
       &:active {
         fill: $brandColor;
       }*/
-}
+  }
 
-/*&__phone {
+  /*&__phone {
       text-decoration: none;
       cursor: $cursor;
       font-weight: 500;
@@ -281,3 +289,4 @@
       &:focus {
         color: $silverColor;
       }*/
+}

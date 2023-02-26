@@ -10,6 +10,7 @@
   border: 1px solid transparent;
   padding: 5.875rem 0;
   display: flex;
+  border-bottom: 1px solid $borderColor;
 
   &__title {
     font-weight: 700;
