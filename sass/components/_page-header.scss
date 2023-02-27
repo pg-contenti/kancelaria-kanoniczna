@@ -24,7 +24,7 @@
     padding: 1.25rem 0;
 
     &__main {
-      display: flex;
+      /*display: flex;*/
       justify-content: space-between;
       flex-grow: 0.75;
       visibility: visible;
@@ -148,6 +148,12 @@
 .header__office-name {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 
   @media (min-width: 1200px) {
     max-width: 200px;
