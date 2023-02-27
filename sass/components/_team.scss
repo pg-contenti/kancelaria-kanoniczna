@@ -23,9 +23,12 @@
   }
 
   &__card {
+    border: 20px;
     background-color: $whiteColor;
     box-shadow: $boxShadow;
-    border-radius: 0px 0px 0.25rem 0.25rem;
+    border-radius: 0.25px 0.25px 0.25rem 0.25rem;
+
+    border-color: $lettersColorGold;
 
     &:hover,
     &:focus,
@@ -41,7 +44,7 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $whiteColor;
-    background-color: $backgrandTenderColor;
+    background-color: $backgrandHeaderColor;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.18;
